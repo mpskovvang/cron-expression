@@ -193,9 +193,9 @@ class CronExpressionTest extends TestCase
             
             // Test @quarterly
             ['@quarterly', strtotime('2019-12-02 00:00:00'), strtotime('2020-01-01 00:00:00'), false],
-            ['@quarterly', strtotime('2020-01-01 00:00:00'), strtotime('2020-04-01 00:00:00'), false],
-            ['@quarterly', strtotime('2020-04-01 00:00:00'), strtotime('2020-07-01 00:00:00'), false],
-            ['@quarterly', strtotime('2020-07-01 00:00:00'), strtotime('2020-10-01 00:00:00'), false],
+            ['@quarterly', strtotime('2020-01-01 00:00:00'), strtotime('2020-04-01 00:00:00'), true],
+            ['@quarterly', strtotime('2020-04-01 00:00:00'), strtotime('2020-07-01 00:00:00'), true],
+            ['@quarterly', strtotime('2020-07-01 00:00:00'), strtotime('2020-10-01 00:00:00'), true],
         ];
     }
 
