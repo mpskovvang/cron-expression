@@ -190,6 +190,12 @@ class CronExpressionTest extends TestCase
             ['0 1 15 JUL mon,Wed,FRi', strtotime('2019-11-14 00:00:00'), strtotime('2020-07-15 01:00:00'), false],
             ['0 1 15 jul mon,Wed,FRi', strtotime('2019-11-14 00:00:00'), strtotime('2020-07-15 01:00:00'), false],
             ['@Weekly', strtotime('2019-11-14 00:00:00'), strtotime('2019-11-17 00:00:00'), false],
+            
+            // Test @quarterly
+            ['@quarterly', strtotime('2019-12-02 00:00:00'), strtotime('2020-01-01 00:00:00'), false],
+            ['@quarterly', strtotime('2020-01-01 00:00:00'), strtotime('2020-04-01 00:00:00'), false],
+            ['@quarterly', strtotime('2020-04-01 00:00:00'), strtotime('2020-07-01 00:00:00'), false],
+            ['@quarterly', strtotime('2020-07-01 00:00:00'), strtotime('2020-10-01 00:00:00'), false],
         ];
     }
 
