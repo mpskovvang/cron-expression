@@ -61,7 +61,7 @@ class CronExpression
      *                           CRON expression:
      *
      *      `@yearly`, `@annually` - Run once a year, midnight, Jan. 1 - 0 0 1 1 *
-     *      `@quarterly` - Run once a quarter, midnight, Jan. 1, Apr. 1, Jul. 1, Oct. 1 - 0 0 1 */3 *
+     *      `@quarterly` - Run once a quarter, midnight, Jan. 1, Apr. 1, Jul. 1, Oct. 1 - 0 0 1 {@*}3 *
      *      `@monthly` - Run once a month, midnight, first of month - 0 0 1 * *
      *      `@weekly` - Run once a week, midnight on Sun - 0 0 * * 0
      *      `@daily` - Run once a day, midnight - 0 0 * * *
